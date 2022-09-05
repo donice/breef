@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import logo from "../assets/breef-logo.png"
+// import logo from "../../assets/breef-logo.png",
 // import Logo from "./breef-logo.png"
 
 
@@ -27,11 +27,9 @@ const NavBar = () => {
               <div className="flex w-full items-center justify-between md:w-auto">
                 <a href="#">
                   <span className="sr-only">Your Company</span>
-                  <img
-                    alt="Your Company"
-                    className="h-8 w-auto sm:h-10"
-                    src={logo}
-                  />
+                  <h1
+                    className="logo h-8 w-auto sm:h-10 text-yellow-100"
+                  > Breef. </h1>
                 </a>
                 <div className="-mr-2 flex items-center md:hidden">
                   <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">

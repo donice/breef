@@ -1,16 +1,17 @@
 // import React, { useState } from 'react'
 import './index.css'
-import NavBar from './components/NavBar'
-import Hero from './components/Hero'
-import Footer from './components/Footer'
+import LandingPage from './components/pages/LandingPage'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 const App = () => {
   return (
-    <div className="App bg-gradient-to-r from-gray-900 to-teal-900">
-      <NavBar />
-      <Hero />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App bg-gradient-to-r from-gray-900 to-teal-900">
+        <LandingPage />
+      </div>
+
+    </Router>
+
   )
 }
 
