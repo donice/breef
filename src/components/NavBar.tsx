@@ -1,7 +1,9 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import logo from "../assets/breef-logo.svg"
+import logo from "../assets/breef-logo.png"
+// import Logo from "./breef-logo.png"
+
 
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
@@ -41,11 +43,11 @@ const NavBar = () => {
             </div>
             <div className="hidden md:ml-10 md:block md:space-x-8 md:pr-4">
               {navigation.map((item) => (
-                <a key={item.name} href={item.href} className="font-medium text-gray-500 hover:text-gray-900">
+                <a key={item.name} href={item.href} className="font-medium text-gray-50 hover:text-teal-400">
                   {item.name}
                 </a>
               ))}
-              <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+              <a href="#" className="font-bold text-teal-400 hover:text-indigo-500">
                 Log in
               </a>
             </div>
