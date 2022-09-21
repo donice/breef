@@ -121,13 +121,18 @@ const SignUp: React.FC = () => {
           <div className="flex bg-stone-50 text-black">
 
             <div className="Registration--form">
-              <a href="/">
-                <span className="sr-only">Your Company</span>
-                <h1
-                  className="logo text-7xl h-8 w-auto sm:h-10 text-teal-700 mb-10"
-                > Breef. </h1>
-              </a>
-              <h1>Create an account</h1>
+              <div className='mb-10'>
+                <a href="/">
+                  <span className="sr-only">Your Company</span>
+                  <h1
+                    className="logo text-7xl h-8 w-auto sm:h-10 text-teal-700"
+                  > Breef. </h1>
+                </a>
+                <h1> Create an account</h1>
+                <p className='text-center text-sm'>
+                  Already have an account? <Link to='/' className='underline'>Sign In</Link>
+                </p>
+              </div>
 
               <form onSubmit={handleSubmit} className="Registration--form-area text-sm">
                 <p
@@ -138,7 +143,6 @@ const SignUp: React.FC = () => {
                   {' '}
                   {errMssg}{' '}
                 </p>
-
                 <label htmlFor="username">
                   Username:
                   <span className={validUser ? 'valid' : 'hide'}>
@@ -149,6 +153,7 @@ const SignUp: React.FC = () => {
                   </span>
                 </label>
                 <br />
+
                 <input
                   type="text"
                   id="username" //matches the label's htmlFor
@@ -161,6 +166,8 @@ const SignUp: React.FC = () => {
                   onFocus={() => setUserFocus(true)}
                   onBlur={() => setUserFocus(false)}
                 />
+
+
                 <p
                   id="uidnote"
                   className={
@@ -174,7 +181,6 @@ const SignUp: React.FC = () => {
                   Must begin with a letter. <br />
                   Letters, numbers, underscores hyphens allowed.
                 </p>
-                <br />
                 <br />
 
                 <label htmlFor="email">
@@ -206,7 +212,6 @@ const SignUp: React.FC = () => {
                   <FontAwesomeIcon icon={faInfoCircle} />
                   Enter a valid email address
                 </p>
-                <br />
                 <br />
 
                 <label htmlFor="password">
@@ -283,10 +288,7 @@ const SignUp: React.FC = () => {
                   />
                 </Link>
                 <br />
-                <p>
-                  Already have an account? <Link to='/' className='underline'>Sign In</Link>
-                </p>
-                <p>
+                <p className='text-[12px]'>
                   By proceeding, you agree to the
                   <a href="/">Terms of Services</a> and
                   <a href="/">Privacy Notice</a>
