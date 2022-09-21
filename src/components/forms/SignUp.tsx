@@ -9,7 +9,7 @@ import {
   faArrowRightToBracket,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import './register.css'
+import './signup.css'
 import { Link } from 'react-router-dom'
 
 
@@ -18,7 +18,7 @@ const EMAIL_REGEX = /^[a-zA-Z][a-zA-Z0-9-_](?=.*[.]).{3,23}$/
 const PASSWORD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/
 
 
-const Register: React.FC = () => {
+const SignUp: React.FC = () => {
   const userRef = useRef<HTMLInputElement>(null)
   const errRef = useRef<HTMLInputElement>(null)
   const [user, setUser] = useState<string>('')
@@ -295,4 +295,4 @@ const Register: React.FC = () => {
   )
 }
 
-export default Register;  
+export default SignUp;  
