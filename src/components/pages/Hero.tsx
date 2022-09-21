@@ -23,10 +23,11 @@ const Hero = () => {
                   <span className="block xl:inline sm:text-">Briefing & Payment System</span>{' '}
                   <span className="block text-teal-400 xl:inline">for creatives</span>
                 </h1>
-                <p className="mt-3 text-base text-gray-400 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
+                <p className="mt-3 text-base text-gray-200 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
                   Every creative that would need to appear serious before clients, would always need a
                   professional billing and receipting system, and <b>BREEF</b> helps that
                 </p>
+
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   {/* <Button /> */}
                   <div className="rounded-md shadow">

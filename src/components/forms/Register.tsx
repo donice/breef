@@ -118,32 +118,8 @@ const Register: React.FC = () => {
       ) : (
         <section>
           <div className="flex bg-stone-50 text-black">
-            {/* <div className="w-96 h-24 max-h-screen bg-cyan-500">
-              <h1>
-                Safe. <br />
-                Secure. <br />
-                Swift. <br />
-              </h1>
-              <p>
-                You'd never have to worry about the security <br />
-                of your accounts, ever again. <br />
-                Start today, with a click
-              </p>
-            </div> */}
 
             <div className="Registration--form">
-              {/* <nav className="Registration--navbar">
-                <img
-                  src={Favicon}
-                  alt="favicon"
-                  className="Registration-navbar--favicon"
-                />
-                <img
-                  src={Logo}
-                  alt="logo"
-                  className="Registration--navbar--logo"
-                />
-              </nav> */}
 
               <form onSubmit={handleSubmit} className="Registration--form-area">
                 <p

@@ -1,6 +1,8 @@
 // import React from "react";
+import { Route, Routes } from "react-router-dom";
 import Register from "../forms/Register";
 import SignIn from "../forms/SignIn";
+import Account from "./Account";
 import Footer from "../static/Footer";
 import NavBar from "../static/NavBar";
 import Hero from "./Hero";
@@ -12,10 +14,13 @@ const LandingPage = () => {
         <NavBar />
         <Hero />
       </div>
-      <Register />
-      <SignIn />
       <Footer />
 
+      <Routes>
+        <Route path='/sigin' element={<SignIn />} />
+        <Route path='/register' element={<Register />} />
+        <Route path='/account' element={<Account />} />
+      </Routes>
     </div>
   )
 }
