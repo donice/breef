@@ -9,7 +9,7 @@ import {
   faArrowRightToBracket,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import './signup.css'
+import './register.css'
 import { Link } from 'react-router-dom'
 
 
@@ -121,8 +121,15 @@ const SignUp: React.FC = () => {
           <div className="flex bg-stone-50 text-black">
 
             <div className="Registration--form">
+              <a href="/">
+                <span className="sr-only">Your Company</span>
+                <h1
+                  className="logo text-7xl h-8 w-auto sm:h-10 text-teal-700 mb-10"
+                > Breef. </h1>
+              </a>
+              <h1>Create an account</h1>
 
-              <form onSubmit={handleSubmit} className="Registration--form-area">
+              <form onSubmit={handleSubmit} className="Registration--form-area text-sm">
                 <p
                   ref={errRef}
                   className={errMssg ? 'errmsg' : 'offscreen'}
@@ -131,8 +138,6 @@ const SignUp: React.FC = () => {
                   {' '}
                   {errMssg}{' '}
                 </p>
-
-                <h1>Create an account</h1>
 
                 <label htmlFor="username">
                   Username:
@@ -238,7 +243,7 @@ const SignUp: React.FC = () => {
                       fontSize: '13px',
                     }}
                   >
-                    <FontAwesomeIcon icon={faEye} />
+                    {/* <FontAwesomeIcon icon={faEye} /> */}
                   </span>
                   {/* 
 									<span style={{fontSize: '13px'}} >
@@ -274,7 +279,7 @@ const SignUp: React.FC = () => {
                   <input
                     type="submit"
                     value="Create Account"
-                    className="submit"
+                    className="bg-teal-700 text-white w-full"
                   />
                 </Link>
                 <br />

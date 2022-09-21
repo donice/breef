@@ -32,7 +32,7 @@ const Hero = () => {
                   {/* <Button /> */}
                   <div className="rounded-md shadow">
                     <a
-                      href="#"
+                      href="/signup"
                       className="flex w-full items-center justify-center rounded-md border border-transparent bg-teal-400 px-8 py-3 text-base font-bold text-teal-900 hover:bg-teal-700 md:py-4 md:px-10 md:text-lg"
                     >
                       Get started

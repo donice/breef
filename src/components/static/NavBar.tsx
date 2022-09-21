@@ -1,9 +1,6 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-// import logo from "../../assets/breef-logo.png",
-// import Logo from "./breef-logo.png"
-
 
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
@@ -28,7 +25,7 @@ const NavBar = () => {
                 <a href="#">
                   <span className="sr-only">Your Company</span>
                   <h1
-                    className="logo h-8 w-auto sm:h-10 text-yellow-100"
+                    className="logo h-8 w-auto sm:h-10 text-teal-700"
                   > Breef. </h1>
                 </a>
                 <div className="-mr-2 flex items-center md:hidden">
@@ -65,17 +62,20 @@ const NavBar = () => {
             focus
             className="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition md:hidden"
           >
+
+            {/* Hidden NavBar for Mobile Devices */}
             <div className="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
               <div className="flex items-center justify-between px-5 pt-4">
                 <div>
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                    alt=""
-                  />
+                  <a href="#">
+                    <span className="sr-only">Your Company</span>
+                    <h1
+                      className="logo h-8 w-auto sm:h-10 text-teal-700"
+                    > Breef. </h1>
+                  </a>
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span className="sr-only">Close main menu</span>
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
