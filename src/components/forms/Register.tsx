@@ -10,6 +10,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './register.css'
+import { Link } from 'react-router-dom'
 
 
 const USER_REGEX = /^[a-zA-Z][a-zA-Z0-9-_.]{3,23}$/
@@ -269,17 +270,17 @@ const Register: React.FC = () => {
                 <br />
                 <br />
 
-                {/* <Link to='/'> */}
-                <input
-                  type="submit"
-                  value="Create Account"
-                  className="submit"
-                />
-                {/* </Link> */}
+                <Link to='/'>
+                  <input
+                    type="submit"
+                    value="Create Account"
+                    className="submit"
+                  />
+                </Link>
                 <br />
-                <span>
-                  <a href="/">Already have an account?</a>
-                </span>
+                <p>
+                  Already have an account? <Link to='/' className='underline'>Sign In</Link>
+                </p>
                 <p>
                   By proceeding, you agree to the
                   <a href="/">Terms of Services</a> and
