@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -31,12 +32,12 @@ const Hero = () => {
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   {/* <Button /> */}
                   <div className="rounded-md shadow">
-                    <a
-                      href="/signup"
+                    <Link
+                      to="/signup"
                       className="flex w-full items-center justify-center rounded-md border border-transparent bg-teal-400 px-8 py-3 text-base font-bold text-teal-900 hover:bg-teal-700 md:py-4 md:px-10 md:text-lg"
                     >
                       Get started
-                    </a>
+                    </Link>
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3">
                     <a

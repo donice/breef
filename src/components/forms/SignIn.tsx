@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 
 const SignIn = () => {
   // const { setAuth } = useContext(Authcontext)
-  const userRef = useRef<any>()
-  const errRef = useRef()
+  const userRef = useRef<HTMLInputElement>(null)
+  const errRef = useRef<HTMLInputElement>(null)
 
   const [user, setUser] = useState<string>('')
   const [password, setPassword] = useState<string>('')
@@ -103,7 +103,7 @@ const SignIn = () => {
                 <input
                   type="text"
                   id="username"
-                  // ref={userRef}
+                  ref={userRef}
                   autoComplete="off"
                   onChange={(e) => setUser(e.target.value)}
                   value={user}
