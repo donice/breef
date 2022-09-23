@@ -1,4 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { createUserWithEmailAndPassword } from 'firebase/auth'
+import { UserAuth } from '../context/AuthContext'
+
 import {
   faCheck,
   faTimes,
@@ -41,6 +44,7 @@ const SignUp: React.FC = () => {
   const [errMssg, setErrMssg] = useState<string>('')
   const [success, setSuccess] = useState<boolean>(false)
 
+
   useEffect(() => {
     userRef.current?.focus()
   }, [])
@@ -68,10 +72,17 @@ const SignUp: React.FC = () => {
     setErrMssg('')
   }, [user, email, password])
 
-  // handleSubmit function
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
 
+  // handleSubmit function
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setErrMssg('')
+    try {
+      await createUser(email, password)
+    } catch (e: any) {
+      setErrMssg(e.message)
+      console.log(e.message)
+    }
   }
 
   //handlePasswordToggle function
@@ -124,15 +135,14 @@ const SignUp: React.FC = () => {
               <div className='mb-10'>
                 <a href="/">
                   <span className="sr-only">Your Company</span>
-                  <h1
-                    className="logo text-7xl h-8 w-auto sm:h-10 text-teal-700"
-                  > Breef. </h1>
+                  <h1 className="logo text-7xl h-8 w-auto sm:h-10 text-teal-700"> Breef. </h1>
                 </a>
                 <h1> Create an account</h1>
                 <p className='text-center text-sm'>
                   Already have an account? <Link to='/' className='underline'>Sign In</Link>
                 </p>
               </div>
+
 
               <form onSubmit={handleSubmit} className="Registration--form-area text-sm">
                 <p
@@ -183,6 +193,7 @@ const SignUp: React.FC = () => {
                 </p>
                 <br />
 
+
                 <label htmlFor="email">
                   Email:
                   <span className={validEmail ? 'valid' : 'hide'}>
@@ -193,6 +204,7 @@ const SignUp: React.FC = () => {
                   </span>
                 </label>
                 <br />
+
                 <input
                   type="text"
                   id="email" // matches the label's htmlFor
@@ -214,6 +226,7 @@ const SignUp: React.FC = () => {
                 </p>
                 <br />
 
+
                 <label htmlFor="password">
                   Password:
                   <span className={validPassword ? 'valid' : 'hide'}>
@@ -226,6 +239,7 @@ const SignUp: React.FC = () => {
                   </span>
                 </label>
                 <br />
+
                 <input
                   type="text"
                   id="password" // matches the label's htmlFor
