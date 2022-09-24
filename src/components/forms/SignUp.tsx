@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { createUserWithEmailAndPassword } from 'firebase/auth'
-import { UserAuth } from '../context/AuthContext'
+// import { UserAuth } from '../context/AuthContext'
 
 import {
   faCheck,
@@ -78,7 +78,7 @@ const SignUp: React.FC = () => {
     e.preventDefault()
     setErrMssg('')
     try {
-      await createUser(email, password)
+      // await createUser(email, password)
     } catch (e: any) {
       setErrMssg(e.message)
       console.log(e.message)
