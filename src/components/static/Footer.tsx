@@ -23,7 +23,7 @@ const Footer = () => {
           <p>doniceubaru@Breef.com</p>
         </div>
 
-        <div className=''>
+        <div className='text-teal-400'>
           <a href="https://www.instagram.com/drdonice">Instagram  </a>
           <a href="https://www.twitter.com/drdonice">Twitter  </a>
           <a href="https://www.linkedin.com/in/doniceubaru">LinkedIn</a>
