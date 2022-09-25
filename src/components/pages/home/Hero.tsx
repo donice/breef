@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Hero = () => {
   return (
     <div>
-      <div className="relative overflow-hidden ">
+      <div className="relative overflow-hidden">
         <div className="mx-auto max-w-7xl">
           <div className="relative z-1 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
             <svg
@@ -18,11 +18,11 @@ const Hero = () => {
             </svg>
 
             {/* LandingPage Page */}
-            <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 ">
+            <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
               <div className="sm:text-center lg:text-left">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-50 sm:text-6xl md:text-6xl">
-                  <span className="block xl:inline sm:text-">Briefing & Payment System</span>{' '}
-                  <span className="block text-teal-400 xl:inline">for creatives</span>
+                  <span className="block xl:inline">Briefing & Payroll System</span>{' '}
+                  <span className="block text-teal-400 xl:inline">for Creatives</span>
                 </h1>
                 <p className="mt-3 text-base text-gray-200 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
                   Every creative that would need to appear serious before clients, would always need a

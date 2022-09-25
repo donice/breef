@@ -6,17 +6,12 @@
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  /* color-scheme: light dark; */
   -webkit-text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
   padding: 0;
-  /* display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh; */
 }
 
 .logo {
@@ -29,4 +24,13 @@ body {
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.glassmorphic-div {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 7px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.2px);
+  -webkit-backdrop-filter: blur(6.2px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
 }

@@ -1,6 +1,6 @@
 // import React, { useState } from 'react'
 import './index.css'
-import LandingPage from './components/pages/LandingPage'
+import LandingPage from './components/pages/home/LandingPage';
 import SignUp from './components/forms/SignUp';
 import SignIn from './components/forms/SignIn';
 import Account from './components/pages/Account';
