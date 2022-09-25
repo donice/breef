@@ -28,19 +28,19 @@ const Services = () => {
       </p>
 
       <div className="mx-auto mt-10 max-w-7xl px-0 sm:flex sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-        <div className='glassmorphic-div w-full mx-auto mt-10 max-w-7xl px-4 sm:w-[30%] sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28'>
-          <h1>Get Paid Globally</h1>
-          <p>With Breef, you would be able to take on jobs from foreigners without the payment barriers</p>
+        <div className='glassmorphic-div w-full mx-auto mt-4 max-w-7xl px-4 py-10 sm:w-[30%] sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28'>
+          <h1 className='text-xl mx-2font-light text-teal-400'>Get Paid Globally</h1>
+          <p className='text-gray-50 font-light'>With Breef, you would be able to take on jobs from foreigners without the payment barriers</p>
         </div>
 
-        <div className='glassmorphic-div w-full mx-auto mt-10 max-w-7xl px-4 sm:w-[30%] sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28'>
-          <h1>Get Paid Globally</h1>
-          <p>With Breef, you would be able to take on jobs from foreigners without the payment barriers</p>
+        <div className='glassmorphic-div w-full mx-auto mt-4 max-w-7xl px-4 py-10 sm:w-[30%] sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28'>
+          <h1 className='text-xl mx-2font-light text-teal-400'>Get Paid Globally</h1>
+          <p className='text-gray-50 font-light'>With Breef, you would be able to take on jobs from foreigners without the payment barriers</p>
         </div>
 
-        <div className='glassmorphic-div w-full mx-auto mt-10 max-w-7xl px-4 sm:w-[30%] sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28'>
-          <h1>Get Paid Globally</h1>
-          <p>With Breef, you would be able to take on jobs from foreigners without the payment barriers</p>
+        <div className='glassmorphic-div w-full mx-auto mt-4 max-w-7xl px-4 py-10 sm:w-[30%] sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28'>
+          <h1 className='text-xl mx-2font-light text-teal-400'>Get Paid Globally</h1>
+          <p className='text-gray-50 font-light'>With Breef, you would be able to take on jobs from foreigners without the payment barriers</p>
         </div>
       </div>
     </div>
