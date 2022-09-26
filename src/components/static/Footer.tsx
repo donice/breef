@@ -24,7 +24,7 @@ const Footer = () => {
           <p>doniceubaru@Breef.com</p>
         </div>
 
-        <div className='flex w-[30px] space-x-4 text-teal-400 mb-2'>
+        <div className='flex w-[30px] space-x-4 text-2xl text-teal-400 mb-2'>
           <a href="https://www.instagram.com/drdonice"><BsInstagram /></a>
           <a href="https://www.twitter.com/drdonice"><BsTwitter /></a>
           <a href="https://www.linkedin.com/in/doniceubaru"><BsLinkedin /></a>
