@@ -6,20 +6,26 @@ import { GiReceiveMoney, GiTakeMyMoney } from 'react-icons/gi'
 const ServiceBox = [
   {
     icon: 'Dashboard',
-    header: '#',
-    paragraph: true
+    header: 'Get Paid Globally',
+    paragraph: 'With Breef, you would be able to take on jobs from foreigners without the payment barriers'
   },
   {
     icon: 'Team',
-    header: '#',
-    paragraph: false
+    header: 'Access Funds Without Hassles',
+    paragraph: 'With Breef, you would be able to take on jobs from foreigners without the payment barriers'
   },
   {
     icon: 'Projects',
-    header: '#',
-    paragraph: false
+    header: 'Automate your Payroll Systems',
+    paragraph: 'With Breef, you would be able to take on jobs from foreigners without the payment barriers'
   }
 ];
+
+const Icons = [
+  <TbSettingsAutomation />,
+  <GiReceiveMoney />,
+  <GiTakeMyMoney />
+]
 
 const Services = () => {
   return (
@@ -33,6 +39,9 @@ const Services = () => {
 
 
       <div className="my-auto mt-5 max-w-7xl sm:flex sm:mt-12 md:mt-16 lg:mt-20 xl:mt-5">
+        <div className='glassmorphic-div w-full px-8 mx-auto mt-4 max-w-7xl px-4 py-10 sm:w-[31%] sm:px-6'>
+
+        </div>
         <div className='glassmorphic-div w-full px-8 mx-auto mt-4 max-w-7xl px-4 py-10 sm:w-[31%] sm:px-6'>
           <GiReceiveMoney className='text-5xl my-2 font-medium text-teal-400' />
           <h1 className='text-xl my-2 font-medium text-teal-400'> Get Paid Globally</h1>
