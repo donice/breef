@@ -11,6 +11,7 @@ const LandingPage = () => {
       <Hero />
       <Services />
       <Footer />
+      {/* <DashBoard /> */}
     </div>
   )
 }

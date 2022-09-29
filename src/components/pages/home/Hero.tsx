@@ -23,7 +23,7 @@ const Hero = () => {
               <div className="sm:text-center lg:text-left">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-50 sm:text-6xl md:text-6xl">
                   <span className="block xl:inline">Briefing & Payroll System</span>{' '}
-                  <span className="scanner block text-teal-400 xl:inline">for Creatives</span>
+                  <span className="type-anim block text-teal-400 xl:inline">for Creatives</span>
                 </h1>
                 <p className="mt-3 text-base text-gray-200 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
                   Every creative that would need to appear serious before clients, would always need a
