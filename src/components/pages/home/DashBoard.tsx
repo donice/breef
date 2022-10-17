@@ -64,7 +64,7 @@ const DashBoard = () => {
                 <div className="number">40,876</div>
                 <div className="indicator">
                   <i className='bx bx-up-arrow-alt'></i>
-                  <span className="text">Up from yesterday</span>
+                  <span className="text">from yesterday</span>
                 </div>
               </div>
               <i className='bx bx-cart-alt cart'></i>
