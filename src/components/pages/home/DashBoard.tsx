@@ -94,7 +94,7 @@ const DashBoard = () => {
             <div className="box">
               <div className="right-side">
                 <div className="box-topic">Total Return</div>
-                <div className="number">11,086</div>
+                <div className="number">31,086</div>
                 <div className="indicator">
                   <i className='bx bx-down-arrow-alt down'></i>
                   <span className="text">Down From Today</span>
